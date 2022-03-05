@@ -9,9 +9,12 @@
 # ADMINS = env.list("ADMINS")  # adminlar ro'yxati
 # IP = env.str("ip")  # Xosting ip manzili
 
-GROUP_CHAT_ID = -1001704364861
 
-import os 
-BOT_TOKEN = str(os.environs.get("BOT_TOKEN"))
-ADMINS = list(os.environs.get("ADMINS"))
-IP = str(os.environs.get("ip"))
+
+import os
+
+BOT_TOKEN = str(os.environ.get("BOT_TOKEN"))  # Bot toekn
+ADMINS = list(os.environ.get("ADMINS"))  # adminlar ro'yxati
+IP = str(os.environ.get("ip"))  # Xosting ip manzili
+
+GROUP_CHAT_ID = -1001704364861
